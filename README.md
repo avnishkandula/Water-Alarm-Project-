@@ -29,8 +29,8 @@ When water eventually hits the sensor, current is able to pass through the water
 
 ## Hardware Design Files
 
-* `/CAD` - Raw KiCad schematic (`.kicad_sch`) and board layout (`.kicad_pcb`) files.
-* `/OUTPUTS` - Production-ready Gerber files, drill files, and BOM CSV.
+* `/CAD` -  KiCad schematic (`.kicad_sch`) and board layout (`.kicad_pcb`) files.
+* `/OUTPUTS` - Gerber files.
 
 ---
 
