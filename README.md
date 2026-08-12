@@ -1,4 +1,4 @@
-# Water-Alarm-PCB-
+# Water Alarm PCB
 A liquid detection circuit that sounds an alarm upon water contact. Designed using KiCad 9.0.1
 
 
