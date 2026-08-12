@@ -30,15 +30,12 @@ When water eventually hits the sensor, current is able to pass through the water
 ## Hardware Design Files
 
 * `/CAD` -  KiCad schematic (`.kicad_sch`) and board layout (`.kicad_pcb`) files.
-* `/OUTPUTS` - Gerber files.
+* `/OUTPUTS` - Gerber files and bill of materials. 
 
 ---
 
-## Physical Verification & Testing
+## Testing
 
-*(Update this section once physical components arrive)*
+*(WIP)*
 
-![Assembled PCB](PATH_TO_YOUR_PHOTO.png)
 
-* **Assembly:** Hand-soldered board using lead-free solder.
-* **Testing Procedure:** Verified nominal voltage across supply rails, tested gate thresho
