@@ -9,7 +9,11 @@ A liquid detection circuit that sounds an alarm upon water contact. Designed usi
 <img width="672" height="480" alt="WaterAlarm3DRenderBottomView" src="https://github.com/user-attachments/assets/211cae9e-c71a-4879-9326-68d2f4cfc1ce" />
 
 ---
+## Schematic Diagram
 
+<img width="1290" height="640" alt="WaterAlarmSchematic" src="https://github.com/user-attachments/assets/cf549f5a-e61a-4798-947d-363e15635a82" />
+
+---
 ## Technical Overview 
 
 The circuit works as an automatic switch that activates upon contact. After a 9V battery is plugged in, current moves through the VCC highway to three places.
@@ -23,21 +27,10 @@ When water eventually hits the sensor, current is able to pass through the water
 
 ---
 
-## Key Specifications
-
-* **Input Voltage:** [e.g., 9V DC]
-* **Switching Element:** N-Channel MOSFET
-* **Alert Output:** Piezoelectric Buzzer
-* **EDA Tool:** KiCad 9.0.1
-* **Manufacturing Deliverables:** Gerber X2, NC Drill, Bill of Materials (BOM)
-
----
-
 ## Hardware Design Files
 
 * `/CAD` - Raw KiCad schematic (`.kicad_sch`) and board layout (`.kicad_pcb`) files.
 * `/OUTPUTS` - Production-ready Gerber files, drill files, and BOM CSV.
-* `/DOCS` - Exported PDF schematic and 3D STEP models.
 
 ---
 
