@@ -1,22 +1,26 @@
 # Water-Alarm-PCB-
-Water Alarm PCB designed in KiCad and built/tested. 
-An autonomous liquid detection circuit that sounds an alarm upon water contact. Designed using KiCad 9.0.1
+A liquid detection circuit that sounds an alarm upon water contact. Designed using KiCad 9.0.1
 
 
 
-## 3D CAD Render
+## 3D CAD Renders
 
-![3D PCB Render](PATH_TO_YOUR_IMAGE.png)
+<img width="873" height="481" alt="WaterAlarm3DRenderTopView" src="https://github.com/user-attachments/assets/abb58260-7cea-4302-ab2f-d574049ecebf" />
+<img width="672" height="480" alt="WaterAlarm3DRenderBottomView" src="https://github.com/user-attachments/assets/211cae9e-c71a-4879-9326-68d2f4cfc1ce" />
 
 ---
 
 ## Technical Overview 
 
-The circuit works as an automatic switch that activates upon contact. 
+The circuit works as an automatic switch that activates upon contact. After a 9V battery is plugged in, current moves through the VCC highway to three places.
 
-2. A pull-down resistor connects the MOSFET gate to ground when there is no water. This drains away random electrical noise so the alarm doesn't go off by accident. 
-3. When the water bridges the gap, positive voltage reaches the gate of the N-channel MOSFET, turning it on and making it act just like a closed switch.
-4. Once the MOSFET turns on, it allows power to flow through the buzzer to ground, completing the circuit and making the alarm sound.
+1. The first path leads to the LED D1 and a resistor R2. The current fights through the resistor, powers the LED and flows into ground. This stays on constantly regardless of the actual water alarm.
+2. The 9V of pressure also travels through to the positive pin of the buzzer BZ1. However, to reach ground and actually complete the circuit, it must pass through the MOSFET transistor Q1. This leaves the current trapped at the buzzer.
+3. This leads to the last path the 9V of pressure travels to, pin 1 of the sensor J2.
+
+When water eventually hits the sensor, current is able to pass through the water, out of pin 2, and through a wire to the gate of transistor Q1. Upon hitting the gate, the transistor is turned on, and the trapped current at the buzzer can pass through the transistor and reach ground. This completes the circuit and allows the buzzer to sound. The resistor R1 and capacitor C1 are attached to the wire that leads to transistor Q1. They act as drainage for the leftover pressure at the gate after the water is wiped away, stopping the alarm from sounding. 
+
+
 ---
 
 ## Key Specifications
