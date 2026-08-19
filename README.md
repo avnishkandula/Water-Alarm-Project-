@@ -5,7 +5,7 @@ A liquid detection circuit that sounds an alarm upon water contact. Designed usi
 
 ## 3D CAD Renders
 
-<img width="873" height="481" alt="WaterAlarm3DRenderTopView" src="https://github.com/user-attachments/assets/abb58260-7cea-4302-ab2f-d574049ecebf" />
+<img width="856" height="514" alt="WaterAlarm3DRenderTopView" src="https://github.com/user-attachments/assets/ded527e0-8036-40c2-95e6-8422390035a1" />
 <img width="672" height="480" alt="WaterAlarm3DRenderBottomView" src="https://github.com/user-attachments/assets/211cae9e-c71a-4879-9326-68d2f4cfc1ce" />
 
 ---
